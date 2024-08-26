@@ -6,6 +6,7 @@
     android:fitsSystemWindows="true"
     android:gravity="center"
     android:padding="12dp"
+    android:orientation="vertical"
     tools:context=".activities.MainActivity">
 
 
@@ -16,5 +17,24 @@
         android:backgroundTint="@color/black"
         android:text="Layout Slider" />
 
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnRoundCornerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        android:text="Round Corner Layout" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnCheckableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        android:text="Round Corner Layout" />
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnCheckableRound"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        android:text="Round Corner Layout" />
 
 </androidx.appcompat.widget.LinearLayoutCompat>

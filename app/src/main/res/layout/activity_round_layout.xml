@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <com.nom.viewcraft.views.RoundedCornerLayout
+        android:id="@+id/checkableRoundCornerLayout"
+        android:layout_width="match_parent"
+        app:cornerRadius="30dp"
+        app:strokeColor="#E91E63"
+        app:strokeWidth="5dp"
+        app:isCircular="true"
+        android:layout_height="200dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:background="@color/black"
+            android:text="Round Corner Layout"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+    </com.nom.viewcraft.views.RoundedCornerLayout>
+
+    <Button
+        android:id="@+id/btnToggleCheck"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Toggle Check State" />
+
+    <Button
+        android:id="@+id/btnSetStrokeColor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Set Stroke Color" />
+
+    <Button
+        android:id="@+id/btnSetStrokeWidth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Set Stroke Width" />
+
+    <Button
+        android:id="@+id/btnSetCornerRadius"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Set Corner Radius" />
+
+    <Button
+        android:id="@+id/btnSetIndividualCornerRadii"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Set Individual Corner Radii" />
+
+    <Button
+        android:id="@+id/btnSetRoundAsCircle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Set Round As Circle" />
+
+
+    <Button
+        android:id="@+id/btnRest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Reset" />
+
+
+</LinearLayout>

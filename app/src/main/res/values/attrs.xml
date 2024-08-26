@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+
+  <!--  <declare-styleable name="RoundedCornerHelper">
+        &lt;!&ndash; If true, the view will be rounded as a circle &ndash;&gt;
+        <attr name="roundAsCircle" format="boolean" />
+
+        &lt;!&ndash; The color of the stroke around the corners &ndash;&gt;
+        <attr name="strokeColor" format="color|reference" />
+
+        &lt;!&ndash; The width of the stroke around the corners &ndash;&gt;
+        <attr name="strokeWidth" format="dimension" />
+
+        &lt;!&ndash; If true, the background will be clipped to the rounded corners &ndash;&gt;
+        <attr name="clipBackground" format="boolean" />
+
+        &lt;!&ndash; Default radius for all corners &ndash;&gt;
+        <attr name="cornerRadius" format="dimension" />
+
+        &lt;!&ndash; Radius for the top-left corner &ndash;&gt;
+        <attr name="topLeftRadius" format="dimension" />
+
+        &lt;!&ndash; Radius for the top-right corner &ndash;&gt;
+        <attr name="topRightRadius" format="dimension" />
+
+        &lt;!&ndash; Radius for the bottom-left corner &ndash;&gt;
+        <attr name="bottomLeftRadius" format="dimension" />
+
+        &lt;!&ndash; Radius for the bottom-right corner &ndash;&gt;
+        <attr name="bottomRightRadius" format="dimension" />
+    </declare-styleable>-->
+
+    <declare-styleable name="RoundedCornerLayout">
+        <attr name="cornerRadius" format="dimension"/>
+        <attr name="strokeWidth" format="dimension"/>
+        <attr name="strokeColor" format="color"/>
+        <attr name="topLeftRadius" format="dimension"/>
+        <attr name="topRightRadius" format="dimension"/>
+        <attr name="bottomLeftRadius" format="dimension"/>
+        <attr name="bottomRightRadius" format="dimension"/>
+        <attr name="isCircular" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="RoundKornerView">
+        <!-- Default corner radius for all corners -->
+        <attr name="corner_radius" format="dimension" />
+
+        <!-- Individual corner radii -->
+        <attr name="top_left_corner_radius" format="dimension" />
+        <attr name="top_right_corner_radius" format="dimension" />
+        <attr name="bottom_right_corner_radius" format="dimension" />
+        <attr name="bottom_left_corner_radius" format="dimension" />
+    </declare-styleable>
+</resources>
