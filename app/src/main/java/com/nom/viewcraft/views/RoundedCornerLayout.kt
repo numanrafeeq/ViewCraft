@@ -5,6 +5,7 @@ import android.graphics.Canvas
 import android.graphics.Paint
 import android.graphics.Path
 import android.graphics.RectF
+import android.graphics.drawable.ColorDrawable
 import android.util.AttributeSet
 import android.widget.LinearLayout
 import androidx.core.content.ContextCompat
@@ -26,10 +27,10 @@ open class RoundedCornerLayout @JvmOverloads constructor(
     private var bottomLeftRadius = 0f
     private var bottomRightRadius = 0f
     private var isCircular = false
-
+    private var fillColor = ContextCompat.getColor(context, android.R.color.transparent)
 
     init {
-        setWillNotDraw(false)
+
         context.theme.obtainStyledAttributes(
             attrs,
             R.styleable.RoundedCornerLayout,
@@ -44,6 +45,7 @@ open class RoundedCornerLayout @JvmOverloads constructor(
                 bottomLeftRadius = getDimension(R.styleable.RoundedCornerLayout_bottomLeftRadius, cornerRadius)
                 bottomRightRadius = getDimension(R.styleable.RoundedCornerLayout_bottomRightRadius, cornerRadius)
                 isCircular = getBoolean(R.styleable.RoundedCornerLayout_isCircular, false)
+                fillColor = getColor(R.styleable.RoundedCornerLayout_fillColor, fillColor)
             } finally {
                 recycle()
             }
@@ -73,6 +75,11 @@ open class RoundedCornerLayout @JvmOverloads constructor(
 
         }
 
+        // Draw background color
+        paint.style = Paint.Style.FILL
+        paint.color = fillColor
+        canvas.drawPath(path, paint)
+
         canvas.clipPath(path)
 
         // Draw child views
@@ -93,6 +100,11 @@ open class RoundedCornerLayout @JvmOverloads constructor(
             canvas.drawRoundRect(rect, cornerRadius, cornerRadius, paint)
         }
 
+    }
+
+    fun setFillColor(color: Int) { // New method to set fill color programmatically
+        this.fillColor = color
+        invalidate()
     }
 
     fun setCornerRadius(radius: Float) {

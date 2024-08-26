@@ -41,6 +41,7 @@
         <attr name="bottomLeftRadius" format="dimension"/>
         <attr name="bottomRightRadius" format="dimension"/>
         <attr name="isCircular" format="boolean"/>
+        <attr name="fillColor" format="color" />
     </declare-styleable>
 
     <declare-styleable name="RoundKornerView">
