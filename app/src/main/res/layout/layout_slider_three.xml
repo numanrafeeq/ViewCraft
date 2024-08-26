@@ -3,18 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fitsSystemWindows="true"
+    android:background="#673AB7"
     android:gravity="center"
-    android:padding="12dp"
     tools:context=".activities.MainActivity">
-
-
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/btnLayoutSlider"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:backgroundTint="@color/black"
-        android:text="Layout Slider" />
 
 
 </androidx.appcompat.widget.LinearLayoutCompat>
